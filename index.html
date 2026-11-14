@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbearia Exclusiva</title>
+    <meta
+      name="description"
+      content="Barbearia Exclusiva — estilo, confiança e atitude. Agende seu horário online."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar container">
+        <div class="brand" aria-label="Barbearia Exclusiva">
+          <div class="brand-mark">
+            <span class="mark-circle"></span>
+            <span class="mark-lines"></span>
+          </div>
+          <div class="brand-text">
+            <span>BARBEARIA</span>
+            <strong>EXCLUSIVA</strong>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a href="#">Início</a>
+          <a href="#">Serviços</a>
+          <a href="#">Barbeiros</a>
+          <a href="#">Galeria</a>
+          <a href="#">Contato</a>
+        </nav>
+
+        <button class="btn btn-outline">AGENDAR</button>
+      </header>
+
+      <main class="container">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">ESTILO • CONFIANÇA • ATITUDE</p>
+            <h1>
+              Seu estilo,<br />
+              <span>nossa paixão.</span>
+            </h1>
+            <p class="subtitle">
+              Agende seu horário e viva a melhor experiência de barbearia.
+            </p>
+            <button class="btn btn-primary">AGENDAR AGORA</button>
+          </div>
+
+          <div class="hero-image" aria-label="Barbeiro atendendo cliente"></div>
+        </section>
+
+        <section class="booking-panel" aria-label="Agendamento de serviços">
+          <div class="booking-header">
+            <h2>Agende seu horário</h2>
+            <div class="hours-badge">
+              <span class="badge-icon">◔</span>
+              <span>SEG - SÁB: 09h às 20h</span>
+            </div>
+          </div>
+
+          <div class="booking-steps">
+            <div class="step active"><span>1</span> Serviço</div>
+            <div class="step"><span>2</span> Barbeiro</div>
+            <div class="step"><span>3</span> Data e hora</div>
+            <div class="step"><span>4</span> Confirmar</div>
+          </div>
+
+          <div class="booking-grid">
+            <div class="booking-block service-block">
+              <div class="panel-title">
+                <span class="title-icon">✂</span>
+                Escolha o serviço
+              </div>
+
+              <div class="service-list">
+                <button class="service-option selected" type="button">
+                  <span class="option-text">
+                    <strong>Corte de Cabelo</strong>
+                    <small>R$ 50,00</small>
+                  </span>
+                  <span class="option-check"></span>
+                </button>
+                <button class="service-option" type="button">
+                  <span class="option-text">
+                    <strong>Barba</strong>
+                    <small>R$ 40,00</small>
+                  </span>
+                  <span class="option-check"></span>
+                </button>
+                <button class="service-option" type="button">
+                  <span class="option-text">
+                    <strong>Corte + Barba</strong>
+                    <small>R$ 80,00</small>
+                  </span>
+                  <span class="option-check"></span>
+                </button>
+                <button class="service-option" type="button">
+                  <span class="option-text">
+                    <strong>Sobrancelha</strong>
+                    <small>R$ 20,00</small>
+                  </span>
+                  <span class="option-check"></span>
+                </button>
+                <button class="service-option" type="button">
+                  <span class="option-text">
+                    <strong>Corte + Barba + Sobrancelha</strong>
+                    <small>R$ 100,00</small>
+                  </span>
+                  <span class="option-check"></span>
+                </button>
+              </div>
+
+              <div class="helper-note">
+                Todos os serviços incluem toalha quente e finalização.
+              </div>
+            </div>
+
+            <div class="booking-block barber-block">
+              <div class="panel-title">
+                <span class="title-icon">✦</span>
+                Escolha o barbeiro
+              </div>
+
+              <div class="barber-list">
+                <button class="barber-card selected" type="button">
+                  <div class="avatar avatar-1"></div>
+                  <div class="barber-info">
+                    <strong>Lucas Ferreira</strong>
+                    <span>★★★★★ <em>4.9</em></span>
+                  </div>
+                </button>
+                <button class="barber-card" type="button">
+                  <div class="avatar avatar-2"></div>
+                  <div class="barber-info">
+                    <strong>Gabriel Santos</strong>
+                    <span>★★★★★ <em>4.8</em></span>
+                  </div>
+                </button>
+                <button class="barber-card" type="button">
+                  <div class="avatar avatar-3"></div>
+                  <div class="barber-info">
+                    <strong>Rafael Lima</strong>
+                    <span>★★★★★ <em>4.9</em></span>
+                  </div>
+                </button>
+                <button class="barber-card" type="button">
+                  <div class="avatar avatar-4"></div>
+                  <div class="barber-info">
+                    <strong>Matheus Alves</strong>
+                    <span>★★★★★ <em>4.7</em></span>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <div class="booking-block date-block">
+              <div class="calendar-header">
+                <button class="calendar-arrow" type="button" aria-label="Mês anterior">‹</button>
+                <span>Maio 2025</span>
+                <button class="calendar-arrow" type="button" aria-label="Próximo mês">›</button>
+              </div>
+
+              <div class="calendar-grid">
+                <div class="day-name">DOM</div>
+                <div class="day-name">SEG</div>
+                <div class="day-name">TER</div>
+                <div class="day-name">QUA</div>
+                <div class="day-name">QUI</div>
+                <div class="day-name">SEX</div>
+                <div class="day-name">SÁB</div>
+
+                <button class="day muted" type="button">27</button>
+                <button class="day muted" type="button">28</button>
+                <button class="day muted" type="button">29</button>
+                <button class="day muted" type="button">30</button>
+                <button class="day muted" type="button">1</button>
+                <button class="day muted" type="button">2</button>
+                <button class="day muted" type="button">3</button>
+
+                <button class="day" type="button">4</button>
+                <button class="day" type="button">5</button>
+                <button class="day" type="button">6</button>
+                <button class="day" type="button">7</button>
+                <button class="day" type="button">8</button>
+                <button class="day" type="button">9</button>
+                <button class="day" type="button">10</button>
+
+                <button class="day" type="button">11</button>
+                <button class="day" type="button">12</button>
+                <button class="day" type="button">13</button>
+                <button class="day" type="button">14</button>
+                <button class="day" type="button">15</button>
+                <button class="day" type="button">16</button>
+                <button class="day" type="button">17</button>
+
+                <button class="day" type="button">18</button>
+                <button class="day" type="button">19</button>
+                <button class="day" type="button">20</button>
+                <button class="day" type="button">21</button>
+                <button class="day" type="button">22</button>
+                <button class="day selected" type="button">23</button>
+                <button class="day" type="button">24</button>
+
+                <button class="day" type="button">25</button>
+                <button class="day" type="button">26</button>
+                <button class="day" type="button">27</button>
+                <button class="day" type="button">28</button>
+                <button class="day" type="button">29</button>
+                <button class="day" type="button">30</button>
+                <button class="day" type="button">31</button>
+              </div>
+
+              <div class="time-select">
+                <div class="time-row">
+                  <button class="time-slot" type="button">09:00</button>
+                  <button class="time-slot" type="button">10:00</button>
+                  <button class="time-slot" type="button">11:00</button>
+                  <button class="time-slot selected" type="button">16:00</button>
+                </div>
+                <div class="time-row">
+                  <button class="time-slot" type="button">14:00</button>
+                  <button class="time-slot" type="button">15:00</button>
+                  <button class="time-slot" type="button">17:00</button>
+                  <button class="time-slot" type="button">18:00</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="booking-block summary-block">
+              <div class="panel-title">
+                <span class="title-icon">✎</span>
+                Resumo do agendamento
+              </div>
+
+              <div class="summary-list">
+                <div class="summary-item">
+                  <span>Serviço</span>
+                  <strong id="summary-service">Corte de Cabelo</strong>
+                </div>
+                <div class="summary-item">
+                  <span>Barbeiro</span>
+                  <strong id="summary-barber">Lucas Ferreira</strong>
+                </div>
+                <div class="summary-item">
+                  <span>Data</span>
+                  <strong>22 de Maio de 2025</strong>
+                </div>
+                <div class="summary-item">
+                  <span>Horário</span>
+                  <strong>16:00</strong>
+                </div>
+                <div class="summary-item total-row">
+                  <span>Duração</span>
+                  <strong>30 min</strong>
+                </div>
+                <div class="summary-item total-row total-money">
+                  <span>Total</span>
+                  <strong id="summary-total">R$ 50,00</strong>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-wide" type="button">CONFIRMAR AGENDAMENTO</button>
+              <div class="secure-note">Seus dados estão seguros conosco.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-strip" aria-label="Vantagens da barbearia">
+          <article class="feature-item">
+            <div class="feature-icon">✂</div>
+            <div>
+              <h3>Agendamento rápido</h3>
+              <p>Marque seu horário em poucos cliques.</p>
+            </div>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-icon">☻</div>
+            <div>
+              <h3>Profissionais qualificados</h3>
+              <p>Barbeiros experientes para um resultado impecável.</p>
+            </div>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-icon">◌</div>
+            <div>
+              <h3>Ambiente premium</h3>
+              <p>Conforto e qualidade que você merece.</p>
+            </div>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-icon">◫</div>
+            <div>
+              <h3>Pagamento facilitado</h3>
+              <p>Diversas formas de pagamento para sua comodidade.</p>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div class="footer-brand">
+            <div class="brand brand-footer">
+              <div class="brand-mark">
+                <span class="mark-circle"></span>
+                <span class="mark-lines"></span>
+              </div>
+              <div class="brand-text">
+                <span>BARBEARIA</span>
+                <strong>EXCLUSIVA</strong>
+              </div>
+            </div>
+            <p>
+              Mais que um corte, uma experiência. Estilo, atitude e qualidade em cada detalhe.
+            </p>
+            <div class="socials" aria-label="Redes sociais">
+              <a href="#" aria-label="Instagram">◌</a>
+              <a href="#" aria-label="Facebook">◌</a>
+              <a href="#" aria-label="E-mail">◌</a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Serviços</a></li>
+              <li><a href="#">Barbeiros</a></li>
+              <li><a href="#">Galeria</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Serviços</h4>
+            <ul>
+              <li><a href="#">Corte de Cabelo</a></li>
+              <li><a href="#">Barba</a></li>
+              <li><a href="#">Corte + Barba</a></li>
+              <li><a href="#">Sobrancelha</a></li>
+              <li><a href="#">Outros serviços</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Contato</h4>
+            <ul>
+              <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
+              <li><a href="mailto:contato@barbearia.com.br">contato@barbearia.com.br</a></li>
+              <li>Rua das Estrelas, 123</li>
+              <li>São Paulo - SP</li>
+            </ul>
+          </div>
+
+          <div class="footer-links hours-list">
+            <h4>Horário de funcionamento</h4>
+            <ul>
+              <li>Segunda a Sexta</li>
+              <li>09h às 20h</li>
+              <li>Sábado</li>
+              <li>09h às 20h</li>
+              <li>Domingo</li>
+              <li>Fechado</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom container">
+          <span>© 2025 Barbearia Exclusiva. Todos os direitos reservados.</span>
+          <span>Desenvolvido com <strong>♥</strong> por sua agência</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
