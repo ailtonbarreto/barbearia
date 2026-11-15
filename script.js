@@ -6,6 +6,7 @@ const summaryDate = document.getElementById('summary-date');
 const summaryTime = document.getElementById('summary-time');
 const calendarGrid = document.getElementById('calendar-grid');
 const calendarMonth = document.getElementById('calendar-month');
+const reservationDialog = document.getElementById('reservation-dialog');
 const bookingSteps = document.querySelectorAll('.booking-steps .step');
 const today = new Date();
 const selectedDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
@@ -117,6 +118,14 @@ document.getElementById('previous-month').addEventListener('click', () => {
 document.getElementById('next-month').addEventListener('click', () => {
   displayedMonth = new Date(displayedMonth.getFullYear(), displayedMonth.getMonth() + 1, 1);
   renderCalendar();
+});
+
+document.getElementById('reserve-button').addEventListener('click', () => {
+  reservationDialog.showModal();
+});
+
+document.getElementById('close-reservation').addEventListener('click', () => {
+  reservationDialog.close();
 });
 
 renderCalendar();

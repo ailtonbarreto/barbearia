@@ -81,6 +81,7 @@
               </div>
 
               <div class="service-list">
+
                 <button class="service-option selected" type="button">
                   <span class="option-text">
                     <strong>Corte de Cabelo</strong>
@@ -88,6 +89,7 @@
                   </span>
                   <span class="option-check"></span>
                 </button>
+
                 <button class="service-option" type="button">
                   <span class="option-text">
                     <strong>Barba</strong>
@@ -95,6 +97,7 @@
                   </span>
                   <span class="option-check"></span>
                 </button>
+
                 <button class="service-option" type="button">
                   <span class="option-text">
                     <strong>Corte + Barba</strong>
@@ -102,20 +105,7 @@
                   </span>
                   <span class="option-check"></span>
                 </button>
-                <!-- <button class="service-option" type="button">
-                  <span class="option-text">
-                    <strong>Sobrancelha</strong>
-                    <small>R$ 20,00</small>
-                  </span>
-                  <span class="option-check"></span>
-                </button> -->
-                <button class="service-option" type="button">
-                  <span class="option-text">
-                    <strong>Corte + Barba + Sobrancelha</strong>
-                    <small>R$ 100,00</small>
-                  </span>
-                  <span class="option-check"></span>
-                </button>
+
               </div>
 
             </div>
@@ -182,11 +172,24 @@
                 </div>
               </div>
 
-              <button class="btn btn-primary btn-wide" type="button">CONFIRMAR AGENDAMENTO</button>
+              <button class="btn btn-primary btn-wide" type="button" id="reserve-button">RESERVAR HORÁRIO</button>
               <div class="secure-note">Seus dados estão seguros conosco.</div>
             </div>
           </div>
         </section>
+
+        <dialog class="reservation-dialog" id="reservation-dialog" aria-labelledby="reservation-title">
+          <div class="reservation-dialog-header">
+            <h2 id="reservation-title">Finalize sua reserva</h2>
+            <button class="calendar-arrow" id="close-reservation" type="button" aria-label="Fechar">×</button>
+          </div>
+          <form id="reservation-form" method="dialog">
+            <label for="customer-name">Seu nome</label>
+            <input id="customer-name" name="name" type="text" autocomplete="name" required />
+            <p class="reservation-reminder">Lembre-se de chegar 10 minutos antes do horário reservado.</p>
+            <button class="btn btn-primary btn-wide" type="submit">REALIZAR PAGAMENTO</button>
+          </form>
+        </dialog>
 
         <section class="feature-strip" aria-label="Vantagens da barbearia">
           <article class="feature-item">
@@ -251,7 +254,6 @@
             <ul>
               <li><a href="#">Início</a></li>
               <li><a href="#">Serviços</a></li>
-              <li><a href="#">Barbeiros</a></li>
               <li><a href="#">Galeria</a></li>
               <li><a href="#">Contato</a></li>
             </ul>
@@ -263,7 +265,6 @@
               <li><a href="#">Corte de Cabelo</a></li>
               <li><a href="#">Barba</a></li>
               <li><a href="#">Corte + Barba</a></li>
-              <li><a href="#">Sobrancelha</a></li>
               <li><a href="#">Outros serviços</a></li>
             </ul>
           </div>
@@ -285,8 +286,6 @@
               <li>09h às 20h</li>
               <li>Sábado</li>
               <li>09h às 20h</li>
-              <li>Domingo</li>
-              <li>Fechado</li>
             </ul>
           </div>
         </div>
