@@ -69,9 +69,8 @@
 
           <div class="booking-steps">
             <div class="step active"><span>1</span> Serviço</div>
-            <div class="step"><span>2</span> Barbeiro</div>
-            <div class="step"><span>3</span> Data e hora</div>
-            <div class="step"><span>4</span> Confirmar</div>
+            <div class="step"><span>2</span> Data e hora</div>
+            <div class="step"><span>3</span> Confirmar</div>
           </div>
 
           <div class="booking-grid">
@@ -103,13 +102,13 @@
                   </span>
                   <span class="option-check"></span>
                 </button>
-                <button class="service-option" type="button">
+                <!-- <button class="service-option" type="button">
                   <span class="option-text">
                     <strong>Sobrancelha</strong>
                     <small>R$ 20,00</small>
                   </span>
                   <span class="option-check"></span>
-                </button>
+                </button> -->
                 <button class="service-option" type="button">
                   <span class="option-text">
                     <strong>Corte + Barba + Sobrancelha</strong>
@@ -119,57 +118,16 @@
                 </button>
               </div>
 
-              <div class="helper-note">
-                Todos os serviços incluem toalha quente e finalização.
-              </div>
-            </div>
-
-            <div class="booking-block barber-block">
-              <div class="panel-title">
-                <span class="title-icon">✦</span>
-                Escolha o barbeiro
-              </div>
-
-              <div class="barber-list">
-                <button class="barber-card selected" type="button">
-                  <div class="avatar avatar-1"></div>
-                  <div class="barber-info">
-                    <strong>Lucas Ferreira</strong>
-                    <span>★★★★★ <em>4.9</em></span>
-                  </div>
-                </button>
-                <button class="barber-card" type="button">
-                  <div class="avatar avatar-2"></div>
-                  <div class="barber-info">
-                    <strong>Gabriel Santos</strong>
-                    <span>★★★★★ <em>4.8</em></span>
-                  </div>
-                </button>
-                <button class="barber-card" type="button">
-                  <div class="avatar avatar-3"></div>
-                  <div class="barber-info">
-                    <strong>Rafael Lima</strong>
-                    <span>★★★★★ <em>4.9</em></span>
-                  </div>
-                </button>
-                <button class="barber-card" type="button">
-                  <div class="avatar avatar-4"></div>
-                  <div class="barber-info">
-                    <strong>Matheus Alves</strong>
-                    <span>★★★★★ <em>4.7</em></span>
-                  </div>
-                </button>
-              </div>
             </div>
 
             <div class="booking-block date-block">
               <div class="calendar-header">
-                <button class="calendar-arrow" type="button" aria-label="Mês anterior">‹</button>
-                <span>Maio 2025</span>
-                <button class="calendar-arrow" type="button" aria-label="Próximo mês">›</button>
+                <button class="calendar-arrow" id="previous-month" type="button" aria-label="Mês anterior">‹</button>
+                <span id="calendar-month" aria-live="polite"></span>
+                <button class="calendar-arrow" id="next-month" type="button" aria-label="Próximo mês">›</button>
               </div>
 
-              <div class="calendar-grid">
+              <div class="calendar-grid" id="calendar-grid" role="group" aria-label="Escolha uma data">
                 <div class="day-name">DOM</div>
                 <div class="day-name">SEG</div>
                 <div class="day-name">TER</div>
@@ -177,46 +135,6 @@
                 <div class="day-name">QUI</div>
                 <div class="day-name">SEX</div>
                 <div class="day-name">SÁB</div>
-
-                <button class="day muted" type="button">27</button>
-                <button class="day muted" type="button">28</button>
-                <button class="day muted" type="button">29</button>
-                <button class="day muted" type="button">30</button>
-                <button class="day muted" type="button">1</button>
-                <button class="day muted" type="button">2</button>
-                <button class="day muted" type="button">3</button>
-
-                <button class="day" type="button">4</button>
-                <button class="day" type="button">5</button>
-                <button class="day" type="button">6</button>
-                <button class="day" type="button">7</button>
-                <button class="day" type="button">8</button>
-                <button class="day" type="button">9</button>
-                <button class="day" type="button">10</button>
-
-                <button class="day" type="button">11</button>
-                <button class="day" type="button">12</button>
-                <button class="day" type="button">13</button>
-                <button class="day" type="button">14</button>
-                <button class="day" type="button">15</button>
-                <button class="day" type="button">16</button>
-                <button class="day" type="button">17</button>
-
-                <button class="day" type="button">18</button>
-                <button class="day" type="button">19</button>
-                <button class="day" type="button">20</button>
-                <button class="day" type="button">21</button>
-                <button class="day" type="button">22</button>
-                <button class="day selected" type="button">23</button>
-                <button class="day" type="button">24</button>
-
-                <button class="day" type="button">25</button>
-                <button class="day" type="button">26</button>
-                <button class="day" type="button">27</button>
-                <button class="day" type="button">28</button>
-                <button class="day" type="button">29</button>
-                <button class="day" type="button">30</button>
-                <button class="day" type="button">31</button>
               </div>
 
               <div class="time-select">
@@ -247,16 +165,12 @@
                   <strong id="summary-service">Corte de Cabelo</strong>
                 </div>
                 <div class="summary-item">
-                  <span>Barbeiro</span>
-                  <strong id="summary-barber">Lucas Ferreira</strong>
-                </div>
-                <div class="summary-item">
                   <span>Data</span>
-                  <strong>22 de Maio de 2025</strong>
+                  <strong id="summary-date"></strong>
                 </div>
                 <div class="summary-item">
                   <span>Horário</span>
-                  <strong>16:00</strong>
+                  <strong id="summary-time">16:00</strong>
                 </div>
                 <div class="summary-item total-row">
                   <span>Duração</span>

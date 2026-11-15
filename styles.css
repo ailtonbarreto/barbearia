@@ -277,7 +277,7 @@ img {
 
 .booking-steps {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   padding: 0 26px;
   border-bottom: 1px solid rgba(214, 176, 120, 0.18);
   background: rgba(255, 255, 255, 0.01);
@@ -325,7 +325,7 @@ img {
 
 .booking-grid {
   display: grid;
-  grid-template-columns: 1.18fr 1.18fr 1.2fr 1.05fr;
+  grid-template-columns: 1.18fr 1.2fr 1.05fr;
   gap: 18px;
   padding: 20px 26px 26px;
 }
@@ -356,15 +356,13 @@ img {
   color: var(--gold);
 }
 
-.service-list,
-.barber-list {
+.service-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.service-option,
-.barber-card {
+.service-option {
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.015);
@@ -383,14 +381,12 @@ img {
   text-align: left;
 }
 
-.service-option:hover,
-.barber-card:hover {
+.service-option:hover {
   border-color: rgba(214, 176, 120, 0.32);
   transform: translateY(-1px);
 }
 
-.service-option.selected,
-.barber-card.selected {
+.service-option.selected {
   border-color: rgba(214, 176, 120, 0.8);
   background: rgba(214, 176, 120, 0.07);
   box-shadow: inset 0 0 0 1px rgba(214, 176, 120, 0.15);
@@ -447,50 +443,6 @@ img {
   line-height: 1.5;
 }
 
-.barber-card {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 12px;
-  text-align: left;
-}
-
-.avatar {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  border: 2px solid rgba(214, 176, 120, 0.45);
-}
-
-.avatar-1 { background-image: url("https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80"); }
-.avatar-2 { background-image: url("https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80"); }
-.avatar-3 { background-image: url("https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=300&q=80"); }
-.avatar-4 { background-image: url("https://images.unsplash.com/photo-1503431128871-cd250803fa41?auto=format&fit=crop&w=300&q=80"); }
-
-.barber-info {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.barber-info strong {
-  font-size: 0.92rem;
-  font-weight: 600;
-}
-
-.barber-info span {
-  color: var(--gold-soft);
-  font-size: 0.66rem;
-  letter-spacing: 0.04em;
-}
-
-.barber-info em {
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.82);
-}
-
 .calendar-header {
   display: grid;
   grid-template-columns: 30px 1fr 30px;
@@ -541,12 +493,12 @@ img {
   transition: background 0.15s ease, border-color 0.15s ease;
 }
 
-.day:hover {
-  border-color: rgba(214, 176, 120, 0.42);
+.calendar-empty {
+  aspect-ratio: 1;
 }
 
-.day.muted {
-  color: rgba(255, 255, 255, 0.25);
+.day:hover {
+  border-color: rgba(214, 176, 120, 0.42);
 }
 
 .day.selected {
